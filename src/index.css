@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom font */
+@font-face {
+  font-family: 'styledFont';
+  src: url('./assets/fonts/FuturaTSNewLight.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
