@@ -35,79 +35,6 @@ export default function HeroSection() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Main Navigation */}
-            <header className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 border-b-2 ${isScrolled ? 'shadow-md' : ''}`}>
-                <nav className="container mx-auto px-4 py-4">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-8">
-                            <a href="/" className="flex items-center">
-                                <img
-                                    src={logo}
-                                    alt="Logo Of Koel Modish Apparels"
-                                    className="h-10 w-24"
-                                />
-                            </a>
-                            <div className="hidden lg:flex items-center space-x-8">
-                                <NavItem href="/about" label="ABOUT" submenuItems={[
-                                    { href: "/history", label: "History" },
-                                    { href: "/leadership", label: "Leadership" },
-                                    { href: "/process", label: "Process" },
-                                    { href: "/about", label: "Why KMA" },
-                                    { href: "/design-studio", label: "Design Studio" },
-                                ]} />
-                                <NavItem href="/product" label="PRODUCT" submenuItems={[
-                                    { href: "/product?filter=womenswear", label: "Womenswear" },
-                                    { href: "/product?filter=menswear", label: "Menswear" },
-                                    { href: "/product?filter=kids", label: "Kidswear" },
-                                    { href: "/product?filter=activewear", label: "Activewear" },
-                                ]} />
-                                <NavItem href="/sustainability" label="SUSTAINABILITY" />
-                                <NavItem href="/social-responsibilities" label="SOCIAL RESPONSIBILITIES" />
-                                <NavItem href="/why-kma" label="WHY KMA" />
-                                <NavItem href="/recent-highlights" label="RECENT HIGHLIGHTS" />
-                            </div>
-                        </div>
-                        <div className="flex items-center space-x-4">
-                            <a href="/contact" className="hidden lg:flex items-center text-gray-600 hover:text-black transition-colors duration-300">
-                                <Plus className="h-4 w-4 mr-1" />
-                                CONTACT US
-                            </a>
-                            <button
-                                className="lg:hidden flex flex-col items-center justify-center w-6 h-6"
-                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            >
-                                <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-                                <span className={`w-6 h-0.5 bg-black my-1 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-                                <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
-                            </button>
-                        </div>
-                    </div>
-                </nav>
-                {/* Mobile and Tablet Menu */}
-                <div className={`lg:hidden bg-white transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
-                    <div className="px-4 py-2 space-y-2">
-                        <MobileNavItem label="ABOUT" submenuItems={[
-                            { href: "/history", label: "History" },
-                            { href: "/leadership", label: "Leadership" },
-                            { href: "/process", label: "Process" },
-                            { href: "/about", label: "Why kma" },
-                            { href: "/design-studio", label: "Design Studio" },
-                        ]} />
-                        <MobileNavItem label="PRODUCT" submenuItems={[
-                            { href: "/product?filter=womenswear", label: "Womenswear" },
-                            { href: "/product?filter=menswear", label: "Menswear" },
-                            { href: "/product?filter=kids", label: "Kidswear" },
-                            { href: "/product?filter=activewear", label: "Activewear" },
-                        ]} />
-                        <a href="/sustainability" className="block py-2 text-gray-600 hover:text-black transition-colors duration-300">SUSTAINABILITY</a>
-                        <a href="/social-responsibilities" className="block py-2 text-gray-600 hover:text-black transition-colors duration-300">SOCIAL RESPONSIBILITIES</a>
-                        <a href="/why-kma" className="block py-2 text-gray-600 hover:text-black transition-colors duration-300">WHY kma</a>
-                        <a href="/recent-highlights" className="block py-2 text-gray-600 hover:text-black transition-colors duration-300">RECENT HIGHLIGHTS</a>
-                        <a href="/contact" className="block py-2 text-gray-600 hover:text-black transition-colors duration-300">CONTACT US</a>
-                    </div>
-                </div>
-            </header>
-
             {/* Hero Section */}
             <main ref={heroRef} className="pt-32 bg-gradient-to-b from-gray-50 to-white font-styled">
                 <motion.div
@@ -119,7 +46,7 @@ export default function HeroSection() {
                     <h1 className="text-[6rem] font-light text-start md:text-center tracking-tight leading-none">
                         KOEL MODISH
                     </h1>
-                    <h2 className="text-[5rem] font-light text-center tracking-tight leading-none mt-[-1.75rem]">
+                    <h2 className="text-[5rem] font-light text-center tracking-tight leading-none mt-[-1rem]">
                         APPARELS
                     </h2>
                     <p className="text-center text-lg tracking-[0.2em] mt-8 font-styled">

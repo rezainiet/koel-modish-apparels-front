@@ -76,26 +76,27 @@ export default function EthicsAndPhilosophy() {
                         ))}
                     </div>
                 </div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center"
+                >
+                    <p className="text-xl font-light leading-relaxed max-w-3xl mx-auto mb-8">
+                        At KOEL MODISH APPARELS, our ethics and philosophy guide every aspect of our business.
+                        We are committed to upholding these principles in our daily operations and long-term strategies.
+                    </p>
+                    <a
+                        href="#learn-more"
+                        className="inline-block px-8 py-3 text-lg tracking-widest hover:bg-black hover:text-white transition-colors duration-300 border-2 border-black"
+                    >
+                        LEARN MORE
+                    </a>
+                </motion.div>
             </div>
 
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-                className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center"
-            >
-                <p className="text-xl font-light leading-relaxed max-w-3xl mx-auto mb-8">
-                    At KOEL MODISH APPARELS, our ethics and philosophy guide every aspect of our business.
-                    We are committed to upholding these principles in our daily operations and long-term strategies.
-                </p>
-                <a
-                    href="#learn-more"
-                    className="inline-block px-8 py-3 text-lg tracking-widest hover:bg-black hover:text-white transition-colors duration-300 border-2 border-black"
-                >
-                    LEARN MORE
-                </a>
-            </motion.div>
+
         </section>
     )
 }
