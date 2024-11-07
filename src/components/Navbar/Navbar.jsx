@@ -48,19 +48,19 @@ const ContactSheet = () => {
                                 Phone Number
                             </label>
                             <div className="flex">
-                                <select
+                                {/* <select
                                     className="w-24 px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-1 focus:ring-black"
                                 >
                                     <option value="BD">BD +880</option>
                                     <option value="UK">UK +44</option>
                                     <option value="HK">HK +852</option>
-                                </select>
+                                </select> */}
                                 <input
                                     type="tel"
                                     id="phone"
                                     name="phone"
-                                    className="flex-1 px-3 py-2 border border-gray-300 rounded-r-md focus:outline-none focus:ring-1 focus:ring-black"
-                                    placeholder="000-0000"
+                                    className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black"
+                                    placeholder="+880 17555-55555"
                                 />
                             </div>
                         </div>
@@ -84,24 +84,19 @@ const ContactSheet = () => {
                         </button>
                     </form>
                     <div className="mt-8 space-y-6">
+                        <p className="text-gray-600">Physical Address</p>
                         <div>
-                            <h3 className="font-semibold text-lg mb-2">UNITED KINGDOM</h3>
+                            <h3 className="font-semibold text-lg mb-2">UTTARA, DHAKA</h3>
                             <p className="text-sm text-gray-600">
-                                4, Quadrum Park Industrial Estate Old Portsmouth Rd, Guildford, GU3 1LU
+                                House #31, Road #17, Sector #13, Dhaka-1230, Bangladesh
                             </p>
                         </div>
-                        <div>
-                            <h3 className="font-semibold text-lg mb-2">BANGLADESH HQ</h3>
-                            <p className="text-sm text-gray-600">
-                                House 7/7A, Floor W-7, Sector 17, Block H-1, BGMEA Complex Uttara, Dhaka-1230, Bangladesh
-                            </p>
-                        </div>
-                        <div>
+                        {/* <div>
                             <h3 className="font-semibold text-lg mb-2">HONGKONG</h3>
                             <p className="text-sm text-gray-600">
                                 Unit 1607-8, 16/F Citicorp Centre, 18 Whitfield Road, Causeway Bay, Hongkong
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -136,10 +131,10 @@ export const Navbar = () => {
                             />
                         </a>
                         <div className="hidden lg:flex items-center space-x-8">
-                            <NavItem href="/about" label="ABOUT" submenuItems={[
-                                { href: "/history", label: "History" },
-                                { href: "/leadership", label: "Leadership" },
+                            <NavItem href="#" label="ABOUT" submenuItems={[
+                                { href: "/our-strength", label: "Our Strength" },
                                 { href: "/process", label: "Process" },
+                                // { href: "/leadership", label: "Leadership" },
                                 { href: "/about", label: "Why KMA" },
                                 { href: "/design-studio", label: "Design Studio" },
                             ]} />
@@ -173,8 +168,8 @@ export const Navbar = () => {
                 <div className="px-4 py-2 space-y-2">
                     <MobileNavItem label="ABOUT" submenuItems={[
                         { href: "/history", label: "History" },
-                        { href: "/leadership", label: "Leadership" },
                         { href: "/process", label: "Process" },
+                        // { href: "/leadership", label: "Leadership" },
                         { href: "/about", label: "Why KMA" },
                         { href: "/design-studio", label: "Design Studio" },
                     ]} />

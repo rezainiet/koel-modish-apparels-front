@@ -49,8 +49,8 @@ export default function HeroSection() {
                     <h2 className="text-[5rem] font-light text-center tracking-tight leading-none mt-[-1rem]">
                         APPARELS
                     </h2>
-                    <p className="text-center text-lg tracking-[0.2em] mt-8 font-styled">
-                        WEAR THE POWER
+                    <p className="text-center text-lg tracking-[0.2em] mt-8 font-styled uppercase">
+                        A global leader in apparel sourcing and supply chain management
                     </p>
                 </motion.div>
             </main>
